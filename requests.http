@@ -1,0 +1,20 @@
+### Lister les tâches
+GET http://localhost:8080/tasks
+
+### Créer une tâche
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{"title": "Apprendre les goroutines"}
+
+### Lire une tâche
+GET http://localhost:8080/tasks/1
+
+### Modifier une tâche
+PUT http://localhost:8080/tasks/1
+Content-Type: application/json
+
+{"title": "Apprendre les goroutines", "done": true}
+
+### Supprimer une tâche
+DELETE http://localhost:8080/tasks/1
